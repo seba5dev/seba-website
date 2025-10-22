@@ -29,7 +29,7 @@ const isActive = (path: string) => {
     href="#main-content"
     class="absolute start-16 -top-full z-50 bg-background px-3 py-2 text-accent backdrop-blur-lg transition-all focus:top-4"
   >
-    Skip to content
+    Saltar al contenido principal
   </a>
   <div
     id="nav-container"
@@ -70,17 +70,17 @@ const isActive = (path: string) => {
         >
           <li class="col-span-2">
             <a href="/posts" class:list={{ "active-nav": isActive("/posts") }}>
-              Posts
+              Publicaciones
             </a>
           </li>
           <li class="col-span-2">
             <a href="/tags" class:list={{ "active-nav": isActive("/tags") }}>
-              Tags
+              Etiquetas
             </a>
           </li>
           <li class="col-span-2">
             <a href="/about" class:list={{ "active-nav": isActive("/about") }}>
-              About
+              Acerca de
             </a>
           </li>
           {
@@ -98,7 +98,7 @@ const isActive = (path: string) => {
                   title="Archives"
                 >
                   <IconArchive class="hidden sm:inline-block" />
-                  <span class="sm:sr-only">Archives</span>
+                  <span class="sm:sr-only">Archivo</span>
                 </LinkButton>
               </li>
             )
@@ -111,10 +111,10 @@ const isActive = (path: string) => {
                 { "[&>svg]:stroke-accent": isActive("/search") },
               ]}
               ariaLabel="search"
-              title="Search"
+              title="Buscar"
             >
               <IconSearch />
-              <span class="sr-only">Search</span>
+              <span class="sr-only">Buscar</span>
             </LinkButton>
           </li>
           {
@@ -123,7 +123,7 @@ const isActive = (path: string) => {
                 <button
                   id="theme-btn"
                   class="focus-outline relative size-12 p-4 sm:size-8 hover:[&>svg]:stroke-accent"
-                  title="Toggles light & dark"
+                  title="Toggle light & dark"
                   aria-label="auto"
                   aria-live="polite"
                 >
